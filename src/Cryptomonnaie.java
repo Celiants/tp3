@@ -1,22 +1,27 @@
-public class Cryptomonnaie{
+public class Cryptomonnaie
+{
     private String nom;
     private double valeurDeJeton; // Imaginons en euros
 
-    public Cryptomonnaie(String nom, double valeurDeJeton){
+    public Cryptomonnaie(String nom, double valeurDeJeton)
+	{
         this.nom = nom;
         this.valeurDeJeton = valeurDeJeton;
     }
 
-    public String getNom() {
+    public String getNom() 
+	{
         return nom;
     }
 
-    public double getValeurDeJeton() {
+    public double getValeurDeJeton() 
+	{
         return valeurDeJeton;
     }
 
     @Override
-    public String toString() {
+    public String toString() 
+	{
         return String.format("%5s",nom) + ":" + String.format("%10.1f",valeurDeJeton);
     }
 }

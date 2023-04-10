@@ -1,5 +1,7 @@
-public class TestCryptoMarche {
-    public static void main(String[] args) {
+public class TestCryptoMarche 
+{
+    public static void main(String[] args) 
+    {
 
         //Creation de crypto-monnaie
         Cryptomonnaie bitcoin  = new Cryptomonnaie("btc", 50000);

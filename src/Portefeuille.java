@@ -1,9 +1,11 @@
-public class Portefeuille {
+public class Portefeuille 
+{
   private Cryptomonnaie monnaie;
   private double montant; // Soit le nombre de jetons
   private String proprietaire;
 
-  public Portefeuille(Cryptomonnaie monnaie, double montant, String proprietaire){
+  public Portefeuille(Cryptomonnaie monnaie, double montant, String proprietaire)
+  {
       this.monnaie      = monnaie;
       this.montant      = montant;
       this.proprietaire = proprietaire;
@@ -18,7 +20,8 @@ public class Portefeuille {
    * @param montantJetons
    * @return Vrai si la transaction a Ã©tÃ© effectuÃ©e, faux sinon.  
    */
-  public boolean transfertDevise (Portefeuille destination, double montantJetons){
+  public boolean transfertDevise (Portefeuille destination, double montantJetons)
+  {
       /**
            FONCTION Ã€ IMPLEMENTER
 	  **/
@@ -32,7 +35,8 @@ public class Portefeuille {
    * @param montantEuros Valeur d'achat en euros 
    * @return true si le montant en euros est supÃ©rieur ou Ã©gal Ã  0 
    */
-  public boolean achatDevise (double montantEuros){
+  public boolean achatDevise (double montantEuros)
+  {
 	/**
            FONCTION Ã€ IMPLEMENTER
 	**/
@@ -45,7 +49,8 @@ public class Portefeuille {
    * @param proprietaire
    * @return true si les nom du propriÃ©taire est correct
    */
-  public boolean estProprietaire (String proprietaire){
+  public boolean estProprietaire (String proprietaire)
+  {
         return (proprietaire.equals(this.proprietaire))?true:false;
   }
 
@@ -54,24 +59,29 @@ public class Portefeuille {
    * @return La valeur en euros du Portefeuille. 
    * Autrement dit, le monant de jetons multipliÃ© par la valeur des jetons. 
    */
-  public double valeurEnEuros(){
+  public double valeurEnEuros()
+  {
       return this.montant * this.monnaie.getValeurDeJeton();
   }
 
-  public String getProprietaire() {
+  public String getProprietaire() 
+  {
       return proprietaire;
   }
 
-  public Cryptomonnaie getMonnaie() {
+  public Cryptomonnaie getMonnaie() 
+  {
       return monnaie;
   }
 
-  public double getMontant() {
+  public double getMontant() 
+  {
       return montant;
   }
 
   @Override
-  public String toString() {
+  public String toString() 
+  {
       return String.format("%10s",proprietaire) + " : "
            + String.format("%10.1f", montant)   + " x " 
            + this.monnaie.toString()            + " = "
