@@ -1,7 +1,5 @@
-public class TestCryptoMarche 
-{
-    public static void main(String[] args) 
-    {
+public class TestCryptoMarche {
+    public static void main(String[] args) {
 
         //Creation de crypto-monnaie
         Cryptomonnaie bitcoin  = new Cryptomonnaie("btc", 50000);
@@ -12,7 +10,7 @@ public class TestCryptoMarche
         Portefeuille antoineEth = new Portefeuille(ethereum, 10, "Antoine");
         Portefeuille aliceBtc   = new Portefeuille(bitcoin,   5, "Alice"  );
 
-        //Creation du marchÃ©
+        //Creation du marché
         CryptoMarche marche = CryptoMarche.getInstance();
         marche.ajouter(antoineBtc);
         marche.ajouter(antoineEth);
