@@ -1,21 +1,60 @@
-public class Cryptomonnaie
-{
-	private String nom;
-	private double valeurDeJeton; // Imaginons en euros
+import java.util.ArrayList;
 
-	public Cryptomonnaie(String nom, double valeurDeJeton)
-	{
-		this.nom           = nom;
-		this.valeurDeJeton = valeurDeJeton;
-	}
+public class CryptoMarche {
 
-	public String getNom          () { return this.nom;           }
+    private ArrayList<Portefeuille> portefeuilles;
+    private static CryptoMarche marche;
 
-	public double getValeurDeJeton() { return this.valeurDeJeton; }
+    private CryptoMarche(){
+        portefeuilles = new ArrayList<Portefeuille>();
+    }
 
-	@Override
-	public String toString()
-	{
-		return String.format("%5s", this.nom) + ":" + String.format("%10.1f", this.valeurDeJeton);
-	}
+    public static CryptoMarche getInstance(){
+        if(marche == null){ marche = new CryptoMarche();}
+		return marche;
+    }
+
+    public void ajouter(Portefeuille p){
+        portefeuilles.add(p);
+    }
+
+    /**
+     * Cette fonction recherche sur le marchÃ© tous les portefeuilles 
+     * du propriÃ©taire et calcule son capital en euros. 
+     * @param proprietare
+     * @return capital en euros du propriÃ©tare.
+     */
+    public double capitalEnEuros(String proprietaire){
+        /**
+			FONCTION Ã€ IMPLEMENTER
+        **/
+
+        return 0;
+    }
+
+    /**
+     * Cette fonction recherche sur le marchÃ© tous les portefeuilles 
+     * d'un type de devise et calcule le volume total de capital de 
+     * cette devise sur le marchÃ© 
+     * @param monnaie
+     * @return capital total en circulation de la cryptomonnaie (en euros).
+     */
+    public double capitalMonneaie(Cryptomonnaie monnaie){
+        /**
+			FONCTION Ã€ IMPLEMENTER
+        **/
+
+        return 0;
+
+    }
+
+    @Override
+    public String toString() {
+        String ret = "";
+        for(Portefeuille p : this.portefeuilles){
+            ret += p.toString() + "\n";
+        }
+        return ret;
+    }
+
 }
