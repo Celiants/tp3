@@ -69,11 +69,10 @@ Un jour quelqu'un de grand et en depression a dit
     padding : 25px;
     background-color : coral;
     color : black;
+    border: 4px dotted black;
     
-
-
 }
 </style>
 
-<div class="cadre"> La video ne marhce pas !!!!</div>
+<div class="cadre"> La video ne marhce pas !!!! </div>
 
