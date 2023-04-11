@@ -13,7 +13,7 @@ Les **meilleurs**
 
 ***
 
-Sudoku Simple | Sudoku Moyen | Sudoku Diabolique 
+**Sudoku Simple** | **Sudoku Moyen** | **Sudoku Diabolique** 
  :---: | :---: | :---: 
 5.2 | 7.8 | 11.2 
 4.6 | 8.5 | 13.6
