@@ -18,6 +18,8 @@ Les **meilleurs**
 5.2 | 7.8 | 11.2 
 4.6 | 8.5 | 13.6
 
+---
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -54,9 +56,19 @@ Les **meilleurs**
 </tbody>
 </table>
 
+***
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eDVmec4ERH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Un jour quelqu'un de grand et en depression a dit
 > - et voila toc
 
+.cadre{
+    text-align: center;
+    padding : 25px;
+    color : black;
+
+}
+
+<div class="cadre"> La video ne marhce pas !!!!</div>
 
