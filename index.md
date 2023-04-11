@@ -8,3 +8,8 @@ Les meilleurs
 
 Si tu sais pas c'est quoi
 ![Ca pourrait t'aider](./image/crocs.jpg)
+
+Sudoku Simple (centré) | Sudoku Moyen (centré) | Sudoku Diabolique (centré)
+ ---: | :---: | :--- 
+5.2 | 7.8 | 11.2 
+4.6 | 8.5 | 13.6
