@@ -63,12 +63,14 @@ Les **meilleurs**
 Un jour quelqu'un de grand et en depression a dit
 > - et voila toc
 
+<style >
 .cadre{
     text-align: center;
     padding : 25px;
     color : black;
 
 }
+</style>
 
 <div class="cadre"> La video ne marhce pas !!!!</div>
 
