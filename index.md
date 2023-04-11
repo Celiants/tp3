@@ -11,10 +11,12 @@ Les **meilleurs**
 *Si tu sais pas c'est quoi*
 ![Ca pourrait t'aider](./image/crocs.jpg "Fait gaffe c'est pas un dauphin")
 
+***
+
 Sudoku Simple | Sudoku Moyen | Sudoku Diabolique 
  :---: | :---: | :---: 
 5.2 | 7.8 | 11.2 
 4.6 | 8.5 | 13.6
 
 Un jour quelqu'un de grand a dit
-- et voila toc
+> - et voila toc
