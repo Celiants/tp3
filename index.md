@@ -67,7 +67,10 @@ Un jour quelqu'un de grand et en depression a dit
 .cadre{
     text-align: center;
     padding : 25px;
+    background-color : coral;
     color : black;
+    
+
 
 }
 </style>
