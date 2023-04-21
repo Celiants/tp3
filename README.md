@@ -40,32 +40,26 @@ Puis, afin de finir cette étape, nous allons réaliser l'exercice, qui consiste
 
 #### 3.1 Tester le concept de branche avec un exemple simple
 
-Nous procédons ensuite à la création d'un fichier au format *markdown*, le remplir puis l'enregistrer.   
+Nous lançons chacun notre propre crypto-monnaie, la **AthosCoin** et la **PorthosCoin**.
 
-Nous pouvons voir maintenant, grace à la commande **git status** que le fichier a été modifier, il faut donc le sélectionner, l'inclur dans le dépôt git avec les commandes respectives : 
+Nous allons donc pour ce faire, créer une nouvelle branche. Nous allons tester dans une branche séparée, vérifier si cela fonctionne puis l’intégrer dans la branche principale. Nous pouvons voir toutes les branches déjà existantes avec **git branch** et en voir le contenu **tree**. Et pouvons également, voir les modifications apportées avec **git log --graph --oneline --all --decorate --topo-order**.
 
-* **git add README.md**
-* **git commit -m "Ajoute du fichier README.md"**
+Créons une nouvelle branche **test** avec l'aide de la commande **git checkout -b test** ( le *-b* permet la création et le *checkout* le changement de branche ).
 
-Maintenant, le fichier README.md est synchronisé avec le dépôt. Nous venons d’enregistrer une première version du fichier.
+Commençons par créer un nouveau fichier *test.txt* avec **touch test.txt** et valider les changements, avec **add** et **commit**.
+
+Si nous changeons le *README.md* dans la branche principale, et que nous faisons **log**, nous voyons qu'une fourchette dans le code vient d'être produite.
 
 #### 3.2 Fusionner la branche de test dans la branche principale
 
 ***
 
-Nous allons développer notre projet de Cryptomonnaie en java pour bien comprendre la gestion des fichiers.  
+Nous voulons maintenant fusionner nos branches. Pour cela il faut aller dans notre branche principale **git checkout main**, et afin de fusionner **git merge test** ( *test* correspondant au nom de la branche que nous voulons fusionner ).
+Nous pouvons vérifier que la fusion a fonctionné avec la commande **git log --graph --oneline --all --decorate --topo-order**
 
-Nouvelle commande
-* créer un fichier vide avec la commande **touch**
+Puis réalisons l'exercie. *Athos* et *Porthos*, ayant fait les 3.1 et 3.2 séparément sans synchronisation avec le dépôt github, peuvent supprimer le fichier *test.txt* du dépôt avec **git rm test.txt puis git commit -m "test.txt supprimé"**.
 
-Nous avons donc complété les programmes .java qui étaient à notre disposition, que nous avons mit dans un sous répertoire *src*.  
-
-Nous avons du donc ajoutez et validez le fichier java au dépôt git, avec les mêmes commandes **git add Cryptommonaie**, **git commit -m "Première version du fichier Cyptomonnaie.java"**.
-
-Nous créons aussi un fichier **.gitignore** pour placer nos .class, avec les commandes
-* **touch .gitignore**
-
-Puis ajouter et valider avec **add** et **commit -m**.
+Pour finir, chacun de nous allos créer une branche **AthosCoin** ou **PorthosCoin**. Nous allons notre propre crypto-monnaie, puis fusionner notre banche avec la branche principale. Puis s'assurer que les modifications sont synchronisées dans le dépôt github.
 
 ***
 
