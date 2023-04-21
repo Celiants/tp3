@@ -1,7 +1,7 @@
-**Nom :** Antunes Celia / Yanis Verdier
-**Groupe :** B1 équipe 08
-**Année :** 2023
-**IUT Le Havre - Cours GIT**
+**Nom :** Antunes Celia / Yanis Verdier   
+**Groupe :** B1 équipe 08   
+**Année :** 2023   
+**IUT Le Havre - Cours GIT**   
 
 # Compte-rendu TP3 Travailler en équipe sur un depôt github distant
 
