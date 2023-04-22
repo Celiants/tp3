@@ -46,7 +46,7 @@ Nous allons donc pour ce faire, créer une nouvelle branche. Nous allons tester 
 
 Créons une nouvelle branche **test** avec l'aide de la commande **git checkout -b test** ( le *-b* permet la création et le *checkout* le changement de branche ).
 
-Commençons par créer un nouveau fichier *test.txt* avec **touch test.txt** et valider les changements, avec **add** et **commit**.
+Commençons par créer un nouveau fichier *test.txt* avec **touch test.txt** ou pour windows **type nul >> "test.txt"** et valider les changements, avec **add** et **commit**.
 
 Si nous changeons le *README.md* dans la branche principale, et que nous faisons **log**, nous voyons qu'une fourchette dans le code vient d'être produite.
 
